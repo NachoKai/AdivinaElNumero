@@ -18,11 +18,29 @@
             <div class="titulo">
                 <h1>Adivina el Numero!</h1>
             </div>
+            <div class="dificultad">Dificultad <br>
+                <label for="facil">Facil</label>
+                <input type="radio" name="dificultad" id="facil" checked>
+                <label for="facil">Normal</label>
+                <input type="radio" name="dificultad" id="normal">
+                <label for="facil">Dificil</label>
+                <input type="radio" name="dificultad" id="dificil">
+                <label for="facil">Muy Dificil</label>
+                <input type="radio" name="dificultad" id="muy-dificil">
+            </div>
+            <div class="intentos">
+                <label for="intentos">Intentos Restantes</label>
+                <input type="number" disabled id="intentos">
+            </div>
+            <hr>
         </div>
         <div class="sector2">
-            <div class="\32 A"><input type="number" placeholder="Ingresa un Numero..." id="user-num" min="0" class="input"></div>
+            <div class="\32 A"><input type="number" placeholder="Ingresa un Numero..." id="user-num" min="0"
+                    class="input"></div>
             <div class="\32 B"><button class="button" id="button">Ingresar!</button>
-            </div><button class="reset" id="reset" onClick="window.location.reload();">Reiniciar</button>
+            </div>
+            <div class="\32 C"><button class="reset" id="reset" onClick="window.location.reload();">Reiniciar</button>
+            </div>
         </div>
         <div class="sector3">Mensaje:
             <div id="mensaje">

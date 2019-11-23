@@ -74,7 +74,7 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-      grid-template-areas: "\32 A \32 B";
+      grid-template-areas: "\32 A \32 B \32 C";
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
@@ -89,6 +89,10 @@ body {
 
 .\32 B {
   grid-area: \32 B;
+}
+
+.\32 C {
+  grid-area: \32 C;
 }
 
 .sector3 {
@@ -129,13 +133,19 @@ label {
   margin-bottom: 0.2rem;
 }
 
-input {
+.input {
   padding: 10px 20px;
   border-radius: 0.25rem;
   border: 1px solid #e6dcf3;
+  margin-right: 10px;
 }
 
-.input {
+#intentos {
+  height: 30px;
+  width: 20px;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  border: 1px solid #e6dcf3;
   margin-right: 10px;
 }
 
@@ -211,6 +221,7 @@ input {
 }
 
 .reset {
+  padding: 10px 20px;
   border-radius: 5px;
   background-color: #64b5f6;
   border: none;
@@ -265,7 +276,8 @@ input {
 }
 
 @media (prefers-color-scheme: dark) {
-  .grid-container {
+  .grid-container,
+  footer {
     background: #2a333d;
     color: #ebebeb;
   }
@@ -275,7 +287,8 @@ input {
 }
 
 @media (prefers-color-scheme: light) {
-  .grid-container {
+  .grid-container,
+  footer {
     background: #ffffff;
     color: #252525;
   }
