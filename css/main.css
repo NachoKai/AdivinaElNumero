@@ -135,6 +135,10 @@ input {
   border: 1px solid #e6dcf3;
 }
 
+.input {
+  margin-right: 10px;
+}
+
 .button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -204,6 +208,36 @@ input {
   border-radius: 5px;
   color: #ffffff;
   line-height: 180%;
+}
+
+.reset {
+  border-radius: 5px;
+  background-color: #64b5f6;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: #2196f3;
+}
+
+.reset:active {
+  font-size: 15px;
+  background-color: #1976d2;
+}
+
+.reset:focus {
+  outline: 0;
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
