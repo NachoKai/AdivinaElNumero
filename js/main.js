@@ -14,18 +14,15 @@ function buscaNumero() {
         mensaje.className = ("correcto")
         mensaje.innerText = "Correcto! Has ganado!"
     } else if (userNum < numeroRandom) {
-        gameOver()
         mensaje.className = ("incorrecto")
-        restaIntento()
         mensaje.innerText = "Ingresa un numero mas grande!"
+        restaIntento()
     } 
     else if (userNum > numeroRandom) {
-        gameOver()
         mensaje.className = ("incorrecto")
-        restaIntento()
         mensaje.innerText = "Ingresa un numero mas chico!"
+        restaIntento()
     } else {
-        gameOver()
         mensaje.innerText = "Error! Intenta nuevamente."
     }
 }
@@ -57,23 +54,21 @@ function conteoIntentos() {
 
 function restaIntento() {
     let intentos = document.querySelector("#intentos")
-    return intentos.value--
-}
-
-function gameOver() {
-    let intentos = document.querySelector("#intentos")
     let botonIngresar = document.getElementById("button")
-
-    if (intentos.value === 0) {
+    
+    if (intentos.value === "1") {
         mensaje.className = ("incorrecto")
         mensaje.innerText = "Perdiste! Intenta nuevamente."
         botonIngresar.disabled = true
+        intentos.value--
+    } else{
+        intentos.value--
     }
 }
 
+
 document.getElementById("button").onclick = function () {
     buscaNumero()
-    gameOver()
 }
 
 document.querySelector("#dificultad").onclick = function () {
