@@ -8,8 +8,6 @@
 
 body {
     background: black;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -17,7 +15,6 @@ body {
 }
 
 .grid-container {
-    height: 50vh;
     margin-top: 20px;
     padding: 10px;
     border: solid 1px black;
@@ -36,20 +33,27 @@ body {
 
 .sector1 {
     width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     grid-area: sector1;
 }
 
 .sector2 {
     width: 100%;
+    justify-content: center;
+    align-content: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1.4fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "\32 A \32 B \32 C";
+    grid-template-areas: "\32 A \32 B";
     grid-area: sector2;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .\32 A {
@@ -57,35 +61,61 @@ body {
 }
 
 .\32 B {
+    display: flex;
     grid-area: \32 B;
 }
 
-.\32 C {
-    grid-area: \32 C;
-}
-
 .sector3 {
+    margin-top: 10px;
     width: 100%;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "\33 A \33 B \33 C";
     grid-area: sector3;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
 }
 
-#mensaje {
-    margin-left: 10px;
-    font-size: 17px;
-    font-weight: bold;
+.\33 A {
+    grid-area: \33 A;
+}
+
+.\33 B {
+    grid-area: \33 B;
+}
+
+.\33 C {
+    grid-area: \33 C;
 }
 
 .sector4 {
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     grid-area: sector4;
+}
+
+.sector5 {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    grid-area: sector5;
+}
+
+#mensaje {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 label {
@@ -100,7 +130,7 @@ label {
     padding: 10px 20px;
     border-radius: 0.25rem;
     border: 1px solid rgb(230, 220, 243);
-    margin-right: 10px;
+    margin: 5px;
 }
 
 #intentos {
@@ -111,6 +141,7 @@ label {
     border: 1px solid rgb(230, 220, 243);
     margin-right: 10px;
 }
+
 
 .button {
     padding: 10px 20px;
@@ -123,8 +154,7 @@ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 5px;
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
@@ -191,8 +221,7 @@ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 5px;
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
@@ -209,6 +238,15 @@ label {
 
 .reset:focus {
     outline: 0;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {

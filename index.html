@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Titulo</title>
+    <title>Adivina el Numero !</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
@@ -14,42 +14,57 @@
 <body>
 
     <div class="grid-container">
+
         <div class="sector1">
             <div class="titulo">
                 <h1>Adivina el Numero!</h1>
             </div>
-            <div class="dificultad">Dificultad <br>
-                <label for="facil">Facil</label>
-                <input type="radio" name="dificultad" id="facil" checked>
-                <label for="facil">Normal</label>
-                <input type="radio" name="dificultad" id="normal">
-                <label for="facil">Dificil</label>
-                <input type="radio" name="dificultad" id="dificil">
-                <label for="facil">Muy Dificil</label>
-                <input type="radio" name="dificultad" id="muy-dificil">
-            </div>
-            <div class="intentos">
-                <label for="intentos">Intentos Restantes</label>
-                <input type="number" disabled id="intentos">
-            </div>
-            <hr>
         </div>
-        <div class="sector2">
-            <div class="\32 A"><input type="number" placeholder="Ingresa un Numero..." id="user-num" min="0"
-                    class="input"></div>
-            <div class="\32 B"><button class="button" id="button">Ingresar!</button>
-            </div>
-            <div class="\32 C"><button class="reset" id="reset" onClick="window.location.reload();">Reiniciar</button>
-            </div>
-        </div>
-        <div class="sector3">Mensaje:
-            <div id="mensaje">
 
+        <div class="sector2">
+            <div class="\32 A">
+                <div class="dificultad">Dificultad <br>
+                    <label for="facil">Facil</label>
+                    <input type="radio" name="dificultad" id="facil" checked>
+                    <label for="facil">Normal</label>
+                    <input type="radio" name="dificultad" id="normal">
+                    <label for="facil">Dificil</label>
+                    <input type="radio" name="dificultad" id="dificil">
+                    <label for="facil">Muy Dificil</label>
+                    <input type="radio" name="dificultad" id="muy-dificil">
+                </div>
+            </div>
+            <div class="\32 B">
+                <div class="intentos">
+                    <label for="intentos">Intentos Restantes</label>
+                    <input type="number" disabled id="intentos">
+                </div>
             </div>
         </div>
+
+        <div class="sector3">
+            <div class="\33 A">
+                <input type="number" placeholder="Ingresa un Numero..." id="user-num" min="0" class="input">
+            </div>
+            <div class="\33 B">
+                <button class="button" id="button">Ingresar!</button>
+            </div>
+            <div class="\33 C">
+                <button class="reset" id="reset" onClick="window.location.reload();">Reiniciar</button>
+            </div>
+        </div>
+
+        <div class="sector4">
+            <div class="sector3">Mensaje:</div>
+        </div>
+
+        <div class="sector5">
+            <div id="mensaje"> </div>
+        </div>
+
     </div>
 
-    <div class="sector4">
+    <div class="footer">
         <footer>Nacho Caiafa</footer>
     </div>
 
