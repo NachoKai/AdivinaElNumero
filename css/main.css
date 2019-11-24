@@ -140,9 +140,6 @@ body {
 
 .sector4 {
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
   display: -webkit-box;
@@ -150,8 +147,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
@@ -173,6 +168,12 @@ body {
   justify-content: center;
   align-content: center;
   grid-area: sector5;
+}
+
+.msg {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #mensaje {
