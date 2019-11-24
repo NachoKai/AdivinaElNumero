@@ -21,7 +21,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 35vw;
     min-height: 40vh;
     flex-wrap: wrap;
     justify-content: center;
@@ -146,6 +146,7 @@ label {
 }
 
 #intentos {
+    font-weight: bold;
     text-align: center;
     height: 30px;
     width: 40px;
@@ -288,7 +289,7 @@ label {
 @media (prefers-color-scheme: dark) {
 
     .grid-container,
-    footer {
+    footer, .footer a {
         background: #2a333d;
         color: #ebebeb;
     }
@@ -301,7 +302,7 @@ label {
 @media (prefers-color-scheme: light) {
 
     .grid-container,
-    footer {
+    footer,.footer a {
         background: #ffffff;
         color: #252525;
     }
