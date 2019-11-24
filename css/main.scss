@@ -1,313 +1,311 @@
 * {
-    font-family: "Source Sans Pro", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
 }
 
 body {
-    background: black;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
+  background: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .grid-container {
-    margin-top: 20px;
-    padding: 10px;
-    border: solid 1px black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 35vw;
-    min-height: 40vh;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "sector1 sector1 sector1 sector1""sector2 sector2 sector2 sector2""sector3 sector3 sector3 sector3""sector4 sector4 sector4 sector4";
+  margin-top: 20px;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  min-height: 40vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "sector1 sector1 sector1 sector1" "sector2 sector2 sector2 sector2" "sector3 sector3 sector3 sector3" "sector4 sector4 sector4 sector4";
 }
 
 .sector1 {
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    grid-area: sector1;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  grid-area: sector1;
 }
 
 .sector2 {
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: 1fr 1.4fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "\32 A \32 B";
-    grid-area: sector2;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr 1.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "\32 A \32 B";
+  grid-area: sector2;
 }
 
-.\32 A {
-    display: flex;
-    grid-area: \32 A;
+.\32 a {
+  display: flex;
+  grid-area: \32 A;
 }
 
-.\32 B {
-    display: flex;
-    grid-area: \32 B;
+.\32 b {
+  display: flex;
+  grid-area: \32 B;
 }
 
 .sector3 {
-    margin-top: 10px;
-    width: 100%;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "\33 A \33 B \33 C";
-    grid-area: sector3;
+  margin-top: 10px;
+  width: 100%;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "\33 A \33 B \33 C";
+  grid-area: sector3;
 }
 
-.\33 A {
-    grid-area: \33 A;
+.\33 a {
+  grid-area: \33 A;
 }
 
-.\33 B {
-    grid-area: \33 B;
+.\33 b {
+  grid-area: \33 B;
 }
 
 .\33 C {
-    grid-area: \33 C;
+  grid-area: \33 C;
 }
 
 .sector4 {
-    width: 100%;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: sector4;
+  width: 100%;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: sector4;
 }
 
 .sector5 {
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    grid-area: sector5;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  grid-area: sector5;
 }
 
 .msg {
-    text-align: left;
-    font-size: 18px;
-    font-weight: bold;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #mensaje {
-    text-align: left;
-    margin-left: 10px;
-    font-size: 17px;
-    font-weight: bold;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 label {
-    font-size: 15px;
-    text-align: left;
-    margin-left: 0;
-    font-size: 0.9rem;
-    margin-bottom: 0.2rem;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 0;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
 }
 
 .input {
-    padding: 10px 20px;
-    border-radius: 0.25rem;
-    border: 1px solid rgb(230, 220, 243);
-    margin: 5px;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(230, 220, 243);
+  margin: 5px;
 }
 
 .intentos {
-    padding: 5px;
+  padding: 5px;
 }
 
 .dificultad {
-    padding: 5px;
+  padding: 5px;
 }
 
 #intentos {
-    font-weight: bold;
-    text-align: center;
-    height: 30px;
-    width: 40px;
-    border-radius: 0.25rem;
-    border: 1px solid rgb(230, 220, 243);
-    margin-right: 10px;
+  font-weight: bold;
+  text-align: center;
+  height: 30px;
+  width: 40px;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(230, 220, 243);
+  margin-right: 10px;
 }
 
-
 .button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #9575cd;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 5px;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #9575cd;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .button:hover {
-    background-color: #673ab7;
+  background-color: #673ab7;
 }
 
 .button:active {
-    font-size: 15px;
-    background-color: #512da8;
+  font-size: 15px;
+  background-color: #512da8;
 }
 
 .button:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .titulo {
-    text-align: center;
-    border-bottom: solid 1px;
-    margin-bottom: 20px;
+  text-align: center;
+  border-bottom: solid 1px;
+  margin-bottom: 20px;
 }
 
 .incorrecto {
-    padding: 5px;
-    display: inline-block;
-    align-self: center;
-    text-align: center;
-    font-size: 18px;
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: rgb(202, 60, 60);
-    border-radius: 5px;
-    color: #ffffff;
-    line-height: 180%;
+  padding: 5px;
+  display: inline-block;
+  align-self: center;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(202, 60, 60);
+  border-radius: 5px;
+  color: #ffffff;
+  line-height: 180%;
 }
 
 .correcto {
-    padding: 5px;
-    display: inline-block;
-    align-self: center;
-    text-align: center;
-    font-size: 18px;
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: rgb(28, 184, 65);
-    border-radius: 5px;
-    color: #ffffff;
-    line-height: 180%;
+  padding: 5px;
+  display: inline-block;
+  align-self: center;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65);
+  border-radius: 5px;
+  color: #ffffff;
+  line-height: 180%;
 }
 
-
 .reset {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #64b5f6;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 5px;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #64b5f6;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .reset:hover {
-    background-color: #2196f3;
+  background-color: #2196f3;
 }
 
 .reset:active {
-    font-size: 15px;
-    background-color: #1976d2;
+  font-size: 15px;
+  background-color: #1976d2;
 }
 
 .reset:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
-    .grid-container {
-        width: 95vw;
-    }
+  .grid-container {
+    width: 95vw;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    .grid-container {
-        width: 80vw;
-    }
+  .grid-container {
+    width: 80vw;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-    .grid-container {
-        width: 70vw;
-    }
+  .grid-container {
+    width: 70vw;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
-    .grid-container {
-        width: 60vw;
-    }
+  .grid-container {
+    width: 60vw;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
+  .grid-container,
+  footer,
+  .footer a {
+    background: #2a333d;
+    color: #ebebeb;
+  }
 
-    .grid-container,
-    footer, .footer a {
-        background: #2a333d;
-        color: #ebebeb;
-    }
-
-    body {
-        background: #000000 !important;
-    }
+  body {
+    background: #000000 !important;
+  }
 }
 
 @media (prefers-color-scheme: light) {
+  .grid-container,
+  footer,
+  .footer a {
+    background: #ffffff;
+    color: #252525;
+  }
 
-    .grid-container,
-    footer,.footer a {
-        background: #ffffff;
-        color: #252525;
-    }
-
-    body {
-        background: #96b7dd !important;
-    }
+  body {
+    background: #96b7dd !important;
+  }
 }

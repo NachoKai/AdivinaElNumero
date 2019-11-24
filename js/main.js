@@ -19,7 +19,7 @@ function buscaNumero() {
         mensaje.className = ("incorrecto")
         mensaje.innerText = "Ingresa un numero mas grande!"
         restaIntento()
-    } 
+    }
     else if (userNum > numeroRandom) {
         mensaje.className = ("incorrecto")
         mensaje.innerText = "Ingresa un numero mas chico!"
@@ -57,13 +57,13 @@ function conteoIntentos() {
 function restaIntento() {
     let intentos = document.querySelector("#intentos")
     let botonIngresar = document.getElementById("button")
-    
+
     if (intentos.value === "1") {
         mensaje.className = ("incorrecto")
         mensaje.innerText = "Perdiste! Intenta nuevamente."
         botonIngresar.disabled = true
         intentos.value--
-    } else{
+    } else {
         intentos.value--
     }
 }

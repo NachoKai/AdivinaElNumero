@@ -94,14 +94,14 @@ body {
   grid-area: sector2;
 }
 
-.\32 A {
+.\32 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   grid-area: \32 A;
 }
 
-.\32 B {
+.\32 b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,11 +129,11 @@ body {
   grid-area: sector3;
 }
 
-.\33 A {
+.\33 a {
   grid-area: \33 A;
 }
 
-.\33 B {
+.\33 b {
   grid-area: \33 B;
 }
 
@@ -354,7 +354,8 @@ label {
 
 @media (prefers-color-scheme: dark) {
   .grid-container,
-  footer, .footer a {
+  footer,
+  .footer a {
     background: #2a333d;
     color: #ebebeb;
   }
@@ -365,7 +366,8 @@ label {
 
 @media (prefers-color-scheme: light) {
   .grid-container,
-  footer, .footer a {
+  footer,
+  .footer a {
     background: #ffffff;
     color: #252525;
   }
