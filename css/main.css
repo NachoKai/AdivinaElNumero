@@ -9,20 +9,20 @@
 }
 
 body {
-  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
 }
 
 .grid-container {
   margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
   border: solid 1px black;
   border-radius: 10px;
   display: -webkit-box;
