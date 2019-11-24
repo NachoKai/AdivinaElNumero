@@ -18,7 +18,7 @@
         </div>
         <div class="sector2">
             <div class="\32 A">
-                <div class="dificultad">Dificultad <br>
+                <div class="dificultad" id="dificultad">Dificultad <br>
                     <label for="facil">Facil</label>
                     <input type="radio" name="dificultad" id="facil" checked>
                     <label for="facil">Normal</label>
@@ -32,7 +32,7 @@
             <div class="\32 B">
                 <div class="intentos">
                     <label for="intentos">Intentos Restantes</label>
-                    <input type="number" disabled id="intentos">
+                    <input type="number" id="intentos" min="0" max="10" disabled>
                 </div>
             </div>
         </div>

@@ -95,6 +95,9 @@ body {
 }
 
 .\32 A {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   grid-area: \32 A;
 }
 
@@ -198,10 +201,18 @@ label {
   margin: 5px;
 }
 
+.intentos {
+  padding: 5px;
+}
+
+.dificultad {
+  padding: 5px;
+}
+
 #intentos {
+  text-align: center;
   height: 30px;
-  width: 20px;
-  padding: 10px 20px;
+  width: 40px;
   border-radius: 0.25rem;
   border: 1px solid #e6dcf3;
   margin-right: 10px;
