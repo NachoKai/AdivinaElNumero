@@ -40,16 +40,16 @@ function conteoIntentos() {
     let muyDificil = document.querySelector("#muy-dificil")
 
     if (facil.checked === true) {
-        intentos.value = 15
-    }
-    if (normal.checked === true) {
         intentos.value = 10
     }
+    if (normal.checked === true) {
+        intentos.value = 8
+    }
     if (dificil.checked === true) {
-        intentos.value = 7
+        intentos.value = 6
     }
     if (muyDificil.checked === true) {
-        intentos.value = 5
+        intentos.value = 4
     }
 }
 
