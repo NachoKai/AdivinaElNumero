@@ -9,10 +9,12 @@ conteoIntentos()
 function buscaNumero() {
     let mensaje = document.getElementById("mensaje")
     let userNum = Number(document.getElementById("user-num").value)
+    let botonIngresar = document.getElementById("button")
 
     if (userNum === numeroRandom) {
         mensaje.className = ("correcto")
         mensaje.innerText = "Correcto! Has ganado!"
+        botonIngresar.disabled = true
     } else if (userNum < numeroRandom) {
         mensaje.className = ("incorrecto")
         mensaje.innerText = "Ingresa un numero mas grande!"
