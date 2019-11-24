@@ -28,7 +28,6 @@ function buscaNumero() {
         mensaje.innerText = "Error! Intenta nuevamente."
     }
 }
-
 document.getElementById("button").onclick = function () {
     buscaNumero()
 }
