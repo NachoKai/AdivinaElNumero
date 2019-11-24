@@ -16,12 +16,12 @@ function buscaNumero() {
         mensaje.innerText = "Correcto! Has ganado!"
         botonIngresar.disabled = true
     } else if (userNum < numeroRandom) {
-        mensaje.className = ("incorrecto")
+        mensaje.className = ("intermedio")
         mensaje.innerText = "Ingresa un numero mas grande!"
         restaIntento()
     }
     else if (userNum > numeroRandom) {
-        mensaje.className = ("incorrecto")
+        mensaje.className = ("intermedio")
         mensaje.innerText = "Ingresa un numero mas chico!"
         restaIntento()
     } else {

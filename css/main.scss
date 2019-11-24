@@ -191,7 +191,6 @@ label {
   align-self: center;
   text-align: center;
   font-size: 18px;
-  color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: rgb(202, 60, 60);
@@ -200,12 +199,24 @@ label {
   line-height: 180%;
 }
 
+.intermedio {
+  display: inline-block;
+  align-self: center;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #fcbf08;
+  border-radius: 5px;
+  color: #000000;
+  line-height: 180%;
+}
+
 .correcto {
   display: inline-block;
   align-self: center;
   text-align: center;
   font-size: 18px;
-  color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: rgb(28, 184, 65);

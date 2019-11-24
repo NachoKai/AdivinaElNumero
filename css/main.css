@@ -251,12 +251,26 @@ label {
       align-self: center;
   text-align: center;
   font-size: 18px;
-  color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: #ca3c3c;
   border-radius: 5px;
   color: #ffffff;
+  line-height: 180%;
+}
+
+.intermedio {
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #fcbf08;
+  border-radius: 5px;
+  color: #000000;
   line-height: 180%;
 }
 
@@ -267,7 +281,6 @@ label {
       align-self: center;
   text-align: center;
   font-size: 18px;
-  color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: #1cb841;
