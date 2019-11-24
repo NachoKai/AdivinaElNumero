@@ -23,7 +23,6 @@ body {
 
 .grid-container {
   margin-top: 20px;
-  padding: 10px;
   border: solid 1px black;
   border-radius: 10px;
   display: -webkit-box;
@@ -195,18 +194,9 @@ label {
 }
 
 .input {
-  padding: 10px 20px;
   border-radius: 0.25rem;
   border: 1px solid #e6dcf3;
   margin: 5px;
-}
-
-.intentos {
-  padding: 5px;
-}
-
-.dificultad {
-  padding: 5px;
 }
 
 #intentos {
@@ -220,7 +210,6 @@ label {
 }
 
 .button {
-  padding: 10px 20px;
   border-radius: 5px;
   background-color: #9575cd;
   border: none;
@@ -256,7 +245,6 @@ label {
 }
 
 .incorrecto {
-  padding: 5px;
   display: inline-block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -273,7 +261,6 @@ label {
 }
 
 .correcto {
-  padding: 5px;
   display: inline-block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -290,7 +277,6 @@ label {
 }
 
 .reset {
-  padding: 10px 20px;
   border-radius: 5px;
   background-color: #64b5f6;
   border: none;
