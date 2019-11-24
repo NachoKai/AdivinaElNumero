@@ -13,19 +13,19 @@ function buscaNumero() {
 
     if (userNum === numeroRandom) {
         mensaje.className = ("correcto")
-        mensaje.innerText = "Correcto! Has ganado!"
+        mensaje.innerText = "Correcto! Has ganado! 👍"
         botonIngresar.disabled = true
     } else if (userNum < numeroRandom) {
         mensaje.className = ("intermedio")
-        mensaje.innerText = "Ingresa un numero mas grande!"
+        mensaje.innerText = "Ingresa un numero mas alto! ☝️"
         restaIntento()
     }
     else if (userNum > numeroRandom) {
         mensaje.className = ("intermedio")
-        mensaje.innerText = "Ingresa un numero mas chico!"
+        mensaje.innerText = "Ingresa un numero mas bajo! 👇"
         restaIntento()
     } else {
-        mensaje.innerText = "Error! Intenta nuevamente."
+        mensaje.innerText = "Error! Intenta nuevamente ✋"
     }
 }
 document.getElementById("button").onclick = function () {
@@ -59,7 +59,7 @@ function restaIntento() {
 
     if (intentos.value === "1") {
         mensaje.className = ("incorrecto")
-        mensaje.innerText = "Perdiste! Intenta nuevamente."
+        mensaje.innerText = "Perdiste! Intenta nuevamente 👎"
         botonIngresar.disabled = true
         intentos.value--
     } else {
