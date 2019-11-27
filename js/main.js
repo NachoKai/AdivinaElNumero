@@ -14,8 +14,7 @@ function buscaNumero() {
         mensaje.className = ("intermedio")
         mensaje.innerText = "Ingresa un numero mas alto! ☝️"
         restaIntento()
-    }
-    else if (userNum > numeroRandom) {
+    } else if (userNum > numeroRandom) {
         mensaje.className = ("intermedio")
         mensaje.innerText = "Ingresa un numero mas bajo! 👇"
         restaIntento()
@@ -61,7 +60,6 @@ function restaIntento() {
         intentos.value--
     }
 }
-
 
 document.getElementById("button").onclick = function () {
     buscaNumero()
