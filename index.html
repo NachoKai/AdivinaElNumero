@@ -1,106 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Adivina el Numero !</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/429b57eee3.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <div class="grid-container">
-      <div class="sector1">
-        <div class="titulo">
-          <h1>Adivina el Numero!</h1>
-          <h6><strike>Pista: intenta del 1 al 50</strike></h6>
-        </div>
-      </div>
-      <div class="sector2">
-        <div class="\32 A">
-          <div class="dificultad" id="dificultad">
-            <b>Dificultad</b><br />
-            <label for="facil">Facil</label>
-            <input type="radio" name="dificultad" id="facil" checked />
-            <label for="facil">Normal</label>
-            <input type="radio" name="dificultad" id="normal" />
-            <label for="facil">Dificil</label>
-            <input type="radio" name="dificultad" id="dificil" />
-            <label for="facil">Muy Dificil</label>
-            <input type="radio" name="dificultad" id="muy-dificil" />
-          </div>
-        </div>
-        <div class="\32 B">
-          <div class="intentos">
-            <label for="intentos"
-              ><b
-                >Intentos <br />
-                Restantes</b
-              ></label
-            >
-            <input type="number" id="intentos" min="0" max="10" disabled />
-          </div>
-        </div>
-      </div>
-      <div class="sector3">
-        <div class="\33 A">
-          <input
-            type="number"
-            placeholder="Ingresar numero..."
-            id="user-num"
-            min="0"
-            class="input"
-          />
-        </div>
-        <div class="\33 B">
-          <button class="button" id="button">Ingresar</button>
-        </div>
-        <div class="\33 C">
-          <button class="reset" id="reset" onClick="window.location.reload();">
-            Reiniciar
-          </button>
-        </div>
-      </div>
-      <hr />
-      <div class="sector4">
-        <div class="msg">Mensaje:</div>
-      </div>
-      <div class="sector5">
-        <div id="mensaje"></div>
+<head>
+  <title>Adivina el Numero !</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/429b57eee3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="sector1">
+      <div class="titulo">
+        <h1>Adivina el Numero!</h1>
+        <h6><strike>Pista: intenta del 1 al 50</strike></h6>
       </div>
     </div>
-
-    <div class="footer">
-      <footer><a href="https://github.com/NachoKai/">Nacho Caiafa</a></footer>
+    <div class="sector2">
+      <div class="\32 A">
+        <div class="dificultad" id="dificultad">
+          <b>Dificultad</b><br />
+          <label for="facil">Facil</label>
+          <input type="radio" name="dificultad" id="facil" checked />
+          <label for="facil">Normal</label>
+          <input type="radio" name="dificultad" id="normal" />
+          <label for="facil">Dificil</label>
+          <input type="radio" name="dificultad" id="dificil" />
+          <label for="facil">Muy Dificil</label>
+          <input type="radio" name="dificultad" id="muy-dificil" />
+        </div>
+      </div>
+      <div class="\32 B">
+        <div class="intentos">
+          <label for="intentos"><b>Intentos <br />
+              Restantes</b></label>
+          <input type="number" id="intentos" min="0" max="10" disabled />
+        </div>
+      </div>
     </div>
+    <div class="sector3">
+      <div class="\33 A">
+        <input type="number" placeholder="Ingresar numero..." id="user-num" min="0" class="input" />
+      </div>
+      <div class="\33 B">
+        <button class="button" id="button">Ingresar</button>
+      </div>
+      <div class="\33 C">
+        <button class="reset" id="reset" onClick="window.location.reload();">
+          Reiniciar
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div class="sector4">
+      <div class="msg">Mensaje:</div>
+    </div>
+    <div class="sector5">
+      <div id="mensaje"></div>
+    </div>
+  </div>
 
-    <script src="js/main.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <footer><a href="https://github.com/NachoKai/">Nacho Caiafa</a> &copy; <script>
+      document.write(new Date().getFullYear());
+    </script>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

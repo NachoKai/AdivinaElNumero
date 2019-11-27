@@ -7,27 +7,23 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  background: black;
+  max-height: calc(100vh - 18px);
 }
 
 .grid-container {
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  border: solid 1px black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  width: 35vw;
-  min-height: 40vh;
+  width: 40vw;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "sector1 sector1 sector1 sector1" "sector2 sector2 sector2 sector2" "sector3 sector3 sector3 sector3" "sector4 sector4 sector4 sector4";
+  grid-template-areas: "sector1 sector1 sector1 sector1""sector2 sector2 sector2 sector2""sector3 sector3 sector3 sector3""sector4 sector4 sector4 sector4";
 }
 
 .sector1 {
@@ -255,13 +251,18 @@ label {
   outline: 0;
 }
 
-.footer {
+footer {
   position: absolute;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
+  height: 20px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+
+  a {
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
@@ -289,9 +290,10 @@ label {
 }
 
 @media (prefers-color-scheme: dark) {
+
   .grid-container,
   footer,
-  .footer a {
+  footer a {
     background: #2a333d;
     color: #ebebeb;
   }
@@ -302,9 +304,10 @@ label {
 }
 
 @media (prefers-color-scheme: light) {
+
   .grid-container,
   footer,
-  .footer a {
+  footer a {
     background: #ffffff;
     color: #252525;
   }
