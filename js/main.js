@@ -1,8 +1,3 @@
-//Facil: max 50, 10 intentos
-//Normal: max 100, 8 intentos
-//Dificil: max 150, 6 intentos
-//Muy Dificil: max 500, 5 intentos
-
 let numeroRandom = Number(Math.floor(Math.random() * 50))
 conteoIntentos()
 
