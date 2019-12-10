@@ -1,12 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
+
 .container-fluid {
   max-height: calc(100vh - 18px);
   max-width: 500px;
@@ -15,18 +19,29 @@ body {
   margin-right: auto;
   margin-left: auto;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
+
 .msg {
   padding: 5px;
   text-align: left;
   font-size: 18px;
   font-weight: bold;
 }
+
 #mensaje {
   padding: 5px;
   text-align: left;
@@ -35,6 +50,7 @@ body {
   font-weight: bold;
   margin: auto;
 }
+
 label {
   font-size: 15px;
   text-align: left;
@@ -42,6 +58,7 @@ label {
   font-size: 0.9rem;
   margin-bottom: 0.2rem;
 }
+
 .input {
   padding: 5px;
   width: 150px;
@@ -49,6 +66,7 @@ label {
   border: 1px solid #e6dcf3;
   margin: 5px;
 }
+
 #intentos {
   font-weight: bold;
   text-align: center;
@@ -59,6 +77,7 @@ label {
   margin-right: 10px;
   margin: auto;
 }
+
 #user-num {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -66,6 +85,7 @@ label {
   margin-right: auto;
   padding: 5px;
 }
+
 .button {
   margin: auto;
   height: 40px;
@@ -83,35 +103,44 @@ label {
   font-weight: bold;
   cursor: pointer;
 }
+
 .button:hover {
   background-color: #673ab7;
 }
+
 .button:active {
   font-size: 15px;
   background-color: #512da8;
 }
+
 .button:focus {
   outline: 0;
 }
+
 .titulo {
   text-align: center;
   border-bottom: solid 1px;
   margin-bottom: 20px;
 }
+
 .dificultad {
   border-bottom: solid 1px #ffffff;
   padding: 5px;
   margin: auto;
 }
+
 .intentos {
   border-bottom: solid 1px #ffffff;
   padding: 5px;
   margin: auto;
 }
+
 .incorrecto {
   padding: 5px;
   display: inline-block;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: center;
   font-size: 18px;
   border-radius: 4px;
@@ -121,10 +150,13 @@ label {
   color: #ffffff;
   line-height: 180%;
 }
+
 .intermedio {
   padding: 5px;
   display: inline-block;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: center;
   font-size: 18px;
   border-radius: 4px;
@@ -134,10 +166,13 @@ label {
   color: #000000;
   line-height: 180%;
 }
+
 .correcto {
   padding: 5px;
   display: inline-block;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: center;
   font-size: 18px;
   border-radius: 4px;
@@ -147,6 +182,7 @@ label {
   color: #ffffff;
   line-height: 180%;
 }
+
 .reset {
   margin: auto;
   background-color: #64b5f6;
@@ -164,16 +200,20 @@ label {
   font-weight: bold;
   cursor: pointer;
 }
+
 .reset:hover {
   background-color: #2196f3;
 }
+
 .reset:active {
   font-size: 15px;
   background-color: #1976d2;
 }
+
 .reset:focus {
   outline: 0;
 }
+
 footer {
   position: absolute;
   bottom: 0;
@@ -183,10 +223,12 @@ footer {
   margin-right: auto;
   margin-left: auto;
 }
+
 footer .link {
   cursor: pointer;
   background: transparent;
 }
+
 @media (prefers-color-scheme: dark) {
   .container-fluid,
   footer,
@@ -198,6 +240,7 @@ footer .link {
     background: #000000 !important;
   }
 }
+
 @media (prefers-color-scheme: light) {
   .container-fluid,
   footer,
@@ -209,3 +252,4 @@ footer .link {
     background: #96b7dd !important;
   }
 }
+/*# sourceMappingURL=main.css.map */
