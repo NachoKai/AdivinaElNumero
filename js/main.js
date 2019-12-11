@@ -86,7 +86,7 @@ function indicarFracaso() {
 function indicarVictoria() {
     Swal.fire({
         icon: 'success',
-        title: "Ganaste!",
+        title: "Correcto!",
         html: `
         <p class="h4">Muy bien hecho. Te sobraron ${intentos.value} intentos.</p>
         <span><input type="button" value="Reiniciar" class="btn btn-outline-danger"
