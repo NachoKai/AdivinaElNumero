@@ -8,7 +8,7 @@ function buscaNumero() {
 
     if (userNum === numeroRandom) {
         mensaje.className = ("correcto")
-        mensaje.innerText = "Correcto! Has ganado! 👍"
+        mensaje.value = indicarVictoria()
         botonIngresar.disabled = true
     } else if (userNum < numeroRandom) {
         mensaje.className = ("intermedio")
@@ -53,7 +53,7 @@ function restaIntento() {
 
     if (intentos.value === "1") {
         mensaje.className = ("incorrecto")
-        mensaje.innerText = "Perdiste! Intenta nuevamente 👎"
+        mensaje.value = indicarFracaso()
         botonIngresar.disabled = true
         intentos.value--
     } else {
@@ -67,4 +67,32 @@ document.getElementById("button").onclick = function () {
 
 document.querySelector("#dificultad").onclick = function () {
     conteoIntentos()
+}
+
+function indicarFracaso() {
+    Swal.fire({
+        icon: 'error',
+        title: "Perdiste!",
+        html: `
+        <p class="h4">Agotaste tus intentos.</p>
+        <span><input type="button" value="Reiniciar" class="btn btn-outline-danger"
+                    onclick="window.location.reload(false)"></span>`,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        showConfirmButton: false,
+    })
+}
+
+function indicarVictoria() {
+    Swal.fire({
+        icon: 'success',
+        title: "Ganaste!",
+        html: `
+        <p class="h4">Muy bien hecho. Te sobraron ${intentos.value} intentos.</p>
+        <span><input type="button" value="Reiniciar" class="btn btn-outline-danger"
+                    onclick="window.location.reload(false)"></span>`,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        showConfirmButton: false,
+    })
 }
