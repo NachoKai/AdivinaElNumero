@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
+
 * {
+  font-family: 'VT323', monospace !important;
+  font-weight: lighter !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,7 +31,7 @@ body {
 .msg {
   padding: 5px;
   text-align: left;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -35,16 +39,15 @@ body {
   padding: 5px;
   text-align: left;
   margin-left: 10px;
-  font-size: 17px;
+  font-size: 21px;
   font-weight: bold;
   margin: auto;
 }
 
 label {
-  font-size: 15px;
+  font-size: 19px;
   text-align: left;
   margin-left: 0;
-  font-size: 0.9rem;
   margin-bottom: 0.2rem;
 }
 
@@ -68,10 +71,10 @@ label {
 }
 
 #user-num {
+  width: 65px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto;
+
   padding: 5px;
 }
 
@@ -88,9 +91,13 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 17px;
+  font-size: 21px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.dif {
+  font-size: 20px;
 }
 
 .button:hover {
@@ -98,7 +105,7 @@ label {
 }
 
 .button:active {
-  font-size: 15px;
+  font-size: 19px;
   background-color: #512da8;
 }
 
@@ -129,7 +136,7 @@ label {
   display: inline-block;
   align-self: center;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: rgb(202, 60, 60);
@@ -143,7 +150,7 @@ label {
   display: inline-block;
   align-self: center;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: #fcbf08;
@@ -157,7 +164,7 @@ label {
   display: inline-block;
   align-self: center;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: rgb(28, 184, 65);
@@ -179,7 +186,7 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 17px;
+  font-size: 21px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -189,7 +196,7 @@ label {
 }
 
 .reset:active {
-  font-size: 15px;
+  font-size: 19px;
   background-color: #1976d2;
 }
 
@@ -240,6 +247,6 @@ footer {
   }
 }
 
-.hidden{
+.hidden {
   display: none;
 }

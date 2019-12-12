@@ -7,54 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <script src="https://kit.fontawesome.com/429b57eee3.js" crossorigin="anonymous"></script>
+  <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 
 <body>
   <div class="container-fluid">
     <div class="row">
       <div class="titulo">
-        <h1>Adivina el Numero!</h1>
+        <h1>Adivina el Número!</h1>
         <h6><strike>Pista: intenta del 1 al 50</strike></h6>
       </div>
     </div>
     <div class="row">
       <div class="dificultad" id="dificultad">
-        <b>Dificultad</b><br />
+        <b class="dif">Dificultad: </b><br />
         <label for="facil">Facil</label>
-        <input type="radio" name="dificultad" id="facil" checked />
+        <input type="radio" name="dificultad" id="facil" />|
         <label for="facil">Normal</label>
-        <input type="radio" name="dificultad" id="normal" />
+        <input type="radio" name="dificultad" id="normal" checked />|
         <label for="facil">Dificil</label>
-        <input type="radio" name="dificultad" id="dificil" />
+        <input type="radio" name="dificultad" id="dificil" />|
         <label for="facil">Muy Dificil</label>
-        <input type="radio" name="dificultad" id="muy-dificil" />
+        <input type="radio" name="dificultad" id="muy-dificil" />|
       </div>
     </div>
     <div class="row">
       <div class="intentos">
-        <label for="intentos"><b>Intentos Restantes</b></label>
+        <label for="intentos"><b>Intentos Restantes: </b></label>
         <input type="number" id="intentos" min="0" max="10" disabled />
       </div>
     </div>
-    <div class="row"><input type="number" placeholder="Ingresar numero..." id="user-num" min="0" class="input" /></div>
     <div class="row">
-      <button class="button" id="button">Ingresar</button> 
-      <button class="reset" id="reset" onClick="window.location.reload();">
-        Reiniciar
-      </button></div>
+      <label for="user-num" class="msg">Ingresar numero: </label>
+      <input type="number" placeholder="0" id="user-num" min="0" class="input"/>
+    </div>
     <div class="row">
-      <div class="msg">Mensaje:</div>
+      <div class="msg">Mensaje: </div>
     </div>
     <div class="row">
       <div id="mensaje"></div>
     </div>
-    <div class="row"></div>
-    <div class="row"></div>
+    <hr />
+    <div class="row">
+      <button class="button" id="button">Ingresar</button>
+      <button class="reset" id="reset" onClick="window.location.reload();">
+        Reiniciar
+      </button>
+    </div>
   </div>
 
-  <footer><a class="link" href="https://github.com/NachoKai/">Nacho Caiafa</a> &copy; <script>
+  <footer>
+    <a class="link" href="https://github.com/NachoKai/">Nacho Caiafa</a>
+    &copy;
+    <script>
       document.write(new Date().getFullYear());
     </script>
   </footer>

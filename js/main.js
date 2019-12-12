@@ -12,11 +12,11 @@ function buscaNumero() {
         botonIngresar.disabled = true
     } else if (userNum < numeroRandom) {
         mensaje.className = ("intermedio")
-        mensaje.innerText = "Ingresa un numero mas alto! ☝️"
+        mensaje.innerText = "Ingresa un número mas alto! ☝️"
         restaIntento()
     } else if (userNum > numeroRandom) {
         mensaje.className = ("intermedio")
-        mensaje.innerText = "Ingresa un numero mas bajo! 👇"
+        mensaje.innerText = "Ingresa un número mas bajo! 👇"
         restaIntento()
     } else {
         mensaje.innerText = "Error! Intenta nuevamente ✋"
