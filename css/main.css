@@ -252,4 +252,8 @@ footer .link {
     background: #96b7dd !important;
   }
 }
+
+.hidden {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */

@@ -27,28 +27,32 @@ document.getElementById("button").onclick = function () {
 }
 
 function conteoIntentos() {
-    let intentos = document.querySelector("#intentos")
-    let facil = document.querySelector("#facil")
-    let normal = document.querySelector("#normal")
-    let dificil = document.querySelector("#dificil")
-    let muyDificil = document.querySelector("#muy-dificil")
+    let intentos = document.getElementById("intentos")
+    let facil = document.getElementById("facil")
+    let normal = document.getElementById("normal")
+    let dificil = document.getElementById("dificil")
+    let muyDificil = document.getElementById("muy-dificil")
 
     if (facil.checked === true) {
+        mensaje.className = ("hidden")
         intentos.value = 10
     }
     if (normal.checked === true) {
+        mensaje.className = ("hidden")
         intentos.value = 8
     }
     if (dificil.checked === true) {
+        mensaje.className = ("hidden")
         intentos.value = 6
     }
     if (muyDificil.checked === true) {
+        mensaje.className = ("hidden")
         intentos.value = 4
     }
 }
 
 function restaIntento() {
-    let intentos = document.querySelector("#intentos")
+    let intentos = document.getElementById("intentos")
     let botonIngresar = document.getElementById("button")
 
     if (intentos.value === "1") {
@@ -65,7 +69,7 @@ document.getElementById("button").onclick = function () {
     buscaNumero()
 }
 
-document.querySelector("#dificultad").onclick = function () {
+document.getElementById("dificultad").onclick = function () {
     conteoIntentos()
 }
 
