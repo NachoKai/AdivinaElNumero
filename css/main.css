@@ -8,7 +8,6 @@
           box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  text-align: center;
 }
 
 body {
