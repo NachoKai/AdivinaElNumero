@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
 * {
-  font-family: 'VT323', monospace !important;
-  font-weight: lighter !important;
+  font-family: 'VT323', monospace;
+  font-weight: lighter;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  text-align: center !important;
+  text-align: center;
 }
 
 body {
@@ -16,13 +16,13 @@ body {
 }
 
 .contenedor {
-  max-height: calc(100vh - 30px) !important;
-  width: 400px !important;
+  max-height: calc(100vh - 20px);
+  width: 400px;
   max-width: calc(100vw - 35px);
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px !important;
+  padding: 20px;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,7 +266,7 @@ footer .link {
     color: #ebebeb;
   }
   body {
-    background: #000000 !important;
+    background: #000000;
   }
 }
 
@@ -278,7 +278,7 @@ footer .link {
     color: #252525;
   }
   body {
-    background: #96b7dd !important;
+    background: #96b7dd;
   }
 }
 
