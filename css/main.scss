@@ -13,13 +13,12 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.container-fluid {
+.container {
   max-height: calc(100vh - 18px);
-  max-width: 500px;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 400px !important;
+  max-width: calc(100vw - 35px);
+  margin: 20px;
+  padding: 20px !important;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -243,7 +242,7 @@ footer {
 
 @media (prefers-color-scheme: dark) {
 
-  .container-fluid,
+  .container,
   footer,
   footer a {
     background: #2a333d;
@@ -257,7 +256,7 @@ footer {
 
 @media (prefers-color-scheme: light) {
 
-  .container-fluid,
+  .container,
   footer,
   footer a {
     background: #ffffff;
