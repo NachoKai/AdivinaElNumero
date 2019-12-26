@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
 
 * {
-  font-family: 'VT323', monospace ;
-  font-weight: lighter ;
+  font-family: 'VT323', monospace;
+  font-weight: lighter;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,13 +15,12 @@ body {
 }
 
 .contenedor {
-  max-height: calc(100vh - 20px) ;
-  width: 400px ;
+  width: 400px;
   max-width: calc(100vw - 35px);
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px ;
+  padding: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -228,46 +227,32 @@ label {
   outline: 0;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  max-height: 20px;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-
-  .link {
-    cursor: pointer;
-    background: transparent;
-  }
+.link {
+  cursor: pointer;
+  background: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
 
-  .contenedor,
-  footer,
-  footer a {
+  .contenedor {
     background: #2a333d;
     color: #ebebeb;
   }
 
   body {
-    background: #000000 ;
+    background: #000000;
   }
 }
 
 @media (prefers-color-scheme: light) {
 
-  .contenedor,
-  footer,
-  footer a {
+  .contenedor {
     background: #ffffff;
     color: #252525;
   }
 
   body {
-    background: #96b7dd ;
+    background: #96b7dd;
   }
 }
 

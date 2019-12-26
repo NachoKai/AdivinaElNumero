@@ -1,22 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
 * {
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-weight: lighter;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: all 0.2s ease;
+  box-sizing: border-box;
   transition: all 0.2s ease;
 }
-
 body {
   background-color: #000 !important;
   font-family: "Source Sans Pro", sans-serif;
 }
-
 .contenedor {
-  max-height: calc(100vh - 20px);
   width: 400px;
   max-width: calc(100vw - 35px);
   margin: 20px;
@@ -24,29 +19,18 @@ body {
   margin-right: auto;
   padding: 20px;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
-
 .msg {
   padding: 5px;
   text-align: left;
   font-size: 24px;
   font-weight: bold;
 }
-
 #mensaje {
   padding: 5px;
   text-align: left;
@@ -55,14 +39,12 @@ body {
   font-weight: bold;
   margin: auto;
 }
-
 label {
   font-size: 19px;
   text-align: left;
   margin-left: 0;
   margin-bottom: 0.2rem;
 }
-
 .input {
   padding: 5px;
   width: 150px;
@@ -70,7 +52,6 @@ label {
   border: 1px solid #e6dcf3;
   margin: 5px;
 }
-
 #intentos {
   font-weight: bold;
   text-align: center;
@@ -81,14 +62,12 @@ label {
   margin-right: 10px;
   margin: auto;
 }
-
 #user-num {
   width: 65px;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
 }
-
 .button {
   margin: auto;
   height: 40px;
@@ -106,49 +85,39 @@ label {
   font-weight: bold;
   cursor: pointer;
 }
-
 .dif {
   font-size: 20px;
 }
-
 .button:hover {
   background-color: #673ab7;
   cursor: pointer;
 }
-
 .button:active {
   font-size: 19px;
   background-color: #512da8;
 }
-
 .button:focus {
   outline: 0;
 }
-
 .titulo {
   text-align: center;
   border-bottom: solid 1px;
   margin-bottom: 20px;
 }
-
 .dificultad {
   border-bottom: solid 1px #ffffff;
   padding: 5px;
   margin: auto;
 }
-
 .intentos {
   border-bottom: solid 1px #ffffff;
   padding: 5px;
   margin: auto;
 }
-
 .incorrecto {
   padding: 5px;
   display: inline-block;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   text-align: center;
   font-size: 22px;
   border-radius: 4px;
@@ -158,13 +127,10 @@ label {
   color: #ffffff;
   line-height: 180%;
 }
-
 .intermedio {
   padding: 5px;
   display: inline-block;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   text-align: center;
   font-size: 22px;
   border-radius: 4px;
@@ -174,13 +140,10 @@ label {
   color: #000000;
   line-height: 180%;
 }
-
 .correcto {
   padding: 5px;
   display: inline-block;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   text-align: center;
   font-size: 22px;
   border-radius: 4px;
@@ -190,7 +153,6 @@ label {
   color: #ffffff;
   line-height: 180%;
 }
-
 .reset {
   margin: auto;
   background-color: #64b5f6;
@@ -208,60 +170,38 @@ label {
   font-weight: bold;
   cursor: pointer;
 }
-
 #facil {
   cursor: pointer;
 }
-
 #normal {
   cursor: pointer;
 }
-
 #dificil {
   cursor: pointer;
 }
-
 #muy-dificil {
   cursor: pointer;
 }
-
 #user-num {
   cursor: pointer;
 }
-
 .reset:hover {
   background-color: #2196f3;
   cursor: pointer;
 }
-
 .reset:active {
   font-size: 19px;
   background-color: #1976d2;
 }
-
 .reset:focus {
   outline: 0;
 }
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  max-height: 20px;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-footer .link {
+.link {
   cursor: pointer;
   background: transparent;
 }
-
 @media (prefers-color-scheme: dark) {
-  .contenedor,
-  footer,
-  footer a {
+  .contenedor {
     background: #2a333d;
     color: #ebebeb;
   }
@@ -269,11 +209,8 @@ footer .link {
     background: #000000;
   }
 }
-
 @media (prefers-color-scheme: light) {
-  .contenedor,
-  footer,
-  footer a {
+  .contenedor {
     background: #ffffff;
     color: #252525;
   }
@@ -281,8 +218,6 @@ footer .link {
     background: #96b7dd;
   }
 }
-
 .hidden {
   display: none;
 }
-/*# sourceMappingURL=main.css.map */
