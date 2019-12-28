@@ -12,6 +12,8 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 .contenedor {
+  background: #2a333d;
+  color: #ebebeb;
   width: 400px;
   max-width: calc(100vw - 35px);
   margin: 20px;
@@ -199,25 +201,4 @@ label {
 .link {
   cursor: pointer;
   background: transparent;
-}
-@media (prefers-color-scheme: dark) {
-  .contenedor {
-    background: #2a333d;
-    color: #ebebeb;
-  }
-  body {
-    background: #000000;
-  }
-}
-@media (prefers-color-scheme: light) {
-  .contenedor {
-    background: #ffffff;
-    color: #252525;
-  }
-  body {
-    background: #96b7dd;
-  }
-}
-.hidden {
-  display: none;
 }
