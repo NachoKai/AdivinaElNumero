@@ -52,6 +52,10 @@ footer {
   font-size: 24px;
 }
 
+.msg:hover {
+  font-size: 25px;
+}
+
 #mensaje {
   padding: 5px;
   text-align: left;
@@ -81,7 +85,6 @@ label {
   width: 40px;
   border-radius: 0.25rem;
   border: 1px solid #e6dcf3;
-  margin-right: 10px;
   margin: auto;
 }
 
@@ -129,18 +132,15 @@ label {
 
 .titulo {
   text-align: center;
-  border-bottom: solid 1px;
   margin-bottom: 20px;
 }
 
 .dificultad {
-  border-bottom: solid 1px #ffffff;
   padding: 5px;
   margin: auto;
 }
 
 .intentos {
-  border-bottom: solid 1px #ffffff;
   padding: 5px;
   margin: auto;
 }
