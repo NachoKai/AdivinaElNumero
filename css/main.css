@@ -49,11 +49,13 @@ footer {
 .msg {
   padding: 5px;
   text-align: left;
-  font-size: 24px;
+  font-size: 20px;
 }
 
-.msg:hover {
-  font-size: 25px;
+.user-num {
+  padding: 5px;
+  text-align: left;
+  font-size: 24px;
 }
 
 #mensaje {
@@ -80,29 +82,36 @@ label {
 }
 
 #intentos {
+  background: transparent;
+  color: white;
+  font-size: 20px;
   text-align: center;
   height: 30px;
   width: 40px;
-  border-radius: 0.25rem;
-  border: 1px solid #e6dcf3;
-  margin: auto;
+  border: none;
 }
 
 #intentosMal {
+  background: transparent;
+  color: red;
+  font-size: 22px;
   text-align: center;
   height: 30px;
   width: 40px;
-  border-radius: 0.25rem;
-  margin: auto;
-  background-color: #ffd5d5;
-  border: 1px solid red;
+  border: none;
 }
 
 #user-num {
+  font-size: 22px;
   width: 65px;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
+}
+
+.user-box {
+  border: solid 1px;
+  border-radius: 5px;
 }
 
 .button {
@@ -147,12 +156,10 @@ label {
 
 .dificultad {
   padding: 5px;
-  margin: auto;
 }
 
 .intentos {
   padding: 5px;
-  margin: auto;
 }
 
 .incorrecto {
