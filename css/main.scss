@@ -14,6 +14,10 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+footer {
+  font-size: 15px;
+}
+
 .contenedor {
   background: #2a333d;
   color: #ebebeb;
@@ -232,4 +236,5 @@ label {
 .link {
   cursor: pointer;
   background: transparent;
+  color: white;
 }
