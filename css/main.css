@@ -53,6 +53,8 @@ footer {
 }
 
 .user-num {
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding: 5px;
   text-align: left;
   font-size: 24px;
@@ -102,6 +104,7 @@ label {
 }
 
 #user-num {
+  cursor: pointer;
   font-size: 22px;
   width: 55px;
   padding: 5px;
@@ -238,10 +241,6 @@ label {
 }
 
 #muy-dificil {
-  cursor: pointer;
-}
-
-#user-num {
   cursor: pointer;
 }
 
