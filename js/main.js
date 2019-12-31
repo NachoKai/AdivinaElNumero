@@ -60,8 +60,10 @@ function restaIntento() {
         mensaje.value = indicarFracaso()
         botonIngresar.disabled = true
         intentos.value--
+        intentosMal()
     } else {
         intentos.value--
+        intentosMal()
     }
 }
 
@@ -99,4 +101,14 @@ function indicarVictoria() {
         allowEscapeKey: false,
         showConfirmButton: false,
     })
+}
+
+function intentosMal() {
+    let intentos = document.getElementById("intentos")
+    setTimeout(() => {
+        intentos.id = 'intentosMal'
+    }, 100);
+    setTimeout(() => {
+        intentos.id = 'intentos'
+    }, 300);
 }

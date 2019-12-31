@@ -88,6 +88,16 @@ label {
   margin: auto;
 }
 
+#intentosMal {
+  text-align: center;
+  height: 30px;
+  width: 40px;
+  border-radius: 0.25rem;
+  margin: auto;
+  background-color: #ffd5d5;
+  border: 1px solid red;
+}
+
 #user-num {
   width: 65px;
   margin-top: 5px;

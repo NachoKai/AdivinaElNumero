@@ -41,6 +41,7 @@ footer {
   text-align: left;
   font-size: 24px;
 }
+
 .msg:hover {
   font-size: 25px;
 }
@@ -73,8 +74,18 @@ label {
   height: 30px;
   width: 40px;
   border-radius: 0.25rem;
-  border: 1px solid rgb(230, 220, 243,);
+  border: 1px solid rgb(230, 220, 243, );
   margin: auto;
+}
+
+#intentosMal {
+  text-align: center;
+  height: 30px;
+  width: 40px;
+  border-radius: 0.25rem;
+  margin: auto;
+  background-color: #ffd5d5;
+  border: 1px solid rgb(255, 0, 0);
 }
 
 #user-num {
