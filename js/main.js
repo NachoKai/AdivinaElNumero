@@ -112,3 +112,5 @@ function intentosMal() {
         intentos.id = 'intentos'
     }, 300);
 }
+
+document.getElementById("current-year").innerHTML = new Date().getFullYear();
